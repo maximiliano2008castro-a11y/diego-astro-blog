@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Mi cuarto post
 author: Diego Sánchez
 description: "¡Este post aparece solito!"
