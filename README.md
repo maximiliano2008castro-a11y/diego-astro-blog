@@ -1,51 +1,43 @@
-# Astro Starter Kit: Minimal
+# Blog de Diego Sánchez — tutorial "Build your first Astro blog"
+
+Blog construido siguiendo las **6 unidades** del tutorial oficial de Astro
+([docs.astro.build/en/tutorial](https://docs.astro.build/en/tutorial/0-introduction/)),
+incluida la lección opcional de **colecciones de contenido**. Cada lección tiene su propio
+commit en el historial (`git log`).
+
+**Sitio publicado:** https://diegosanchez-astro-blog.netlify.app
+
+| Unidad | Qué se hizo |
+|---|---|
+| 1. Setup | Proyecto con la plantilla *minimal*, repositorio en GitHub y despliegue en Netlify |
+| 2. Pages | Páginas `.astro`, posts en Markdown, variables, renderizado condicional, estilos con `define:vars` y `global.css` |
+| 3. Components | `Navigation`, `Footer`, `Social` (props), `Header` responsivo y menú con `<script>` |
+| 4. Layouts | `BaseLayout` con `<slot />`, `MarkdownPostLayout` y layouts anidados |
+| 5. Astro API | Lista de posts con `import.meta.glob()`, etiquetas con `getStaticPaths()`, índice de etiquetas y RSS |
+| 6. Islands | Isla de Preact con `client:load`, modo oscuro sin framework y colección de contenido con Zod |
+
+## Correrlo
+
+Requiere **Node.js 22.23.4 o más nuevo** (Astro 7).
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # genera dist/
 ```
 
-<!-- ASTRO:REMOVE:START -->
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-<!-- ASTRO:REMOVE:END -->
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+├── blog/                 # posts en Markdown (colección de contenido)
+├── components/           # Navigation, Header, Menu, Footer, Social, BlogPost, ThemeIcon, Greeting.jsx
+├── layouts/              # BaseLayout, MarkdownPostLayout
+├── pages/
+│   ├── index.astro, about.astro, blog.astro, rss.xml.js
+│   ├── posts/[...slug].astro
+│   └── tags/index.astro, tags/[tag].astro
+├── scripts/menu.js
+├── styles/global.css
+└── content.config.ts     # schema de la colección "blog"
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
