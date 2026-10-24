@@ -7,7 +7,7 @@ const pageTitle = "Mi blog de aprendizaje de Astro";
 const allPosts = await getCollection("blog");
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>Aquí voy a publicar sobre mi camino aprendiendo Astro.</p>
+  <p>Aquí es donde publicaré sobre mi viaje de aprendizaje de Astro.</p>
   <ul>
     {
       allPosts.map((post) => (

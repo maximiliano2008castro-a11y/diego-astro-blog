@@ -1,11 +1,12 @@
 ---
-title: Mi tercer post
-author: Diego Sánchez
-description: "Tuve algunos retos, ¡pero preguntar en la comunidad me ayudó mucho!"
+title: 'Mi tercera publicación en el blog'
+author: 'Diego Sánchez'
+description: "Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho."
 image:
     url: "/images/rays.webp"
-    alt: "El logo de Astro sobre un fondo oscuro con rayos de colores."
-pubDate: 2026-10-22
-tags: ["astro", "learning in public", "setbacks", "community"]
+    alt: "El logotipo de Astro sobre un fondo oscuro con rayos de colores del arcoíris."
+pubDate: 2022-07-15
+tags: ["astro", "aprender en público", "contratiempos", "comunidad"]
 ---
-No todo fue fácil, pero estoy disfrutando construir con Astro. ¡Y la [comunidad de Discord](https://astro.build/chat) es muy amable y ayuda bastante!
+
+No siempre ha sido fácil, pero disfruto construyendo con Astro. Además, la [comunidad de Discord](https://astro.build/chat) es muy amable y servicial.

@@ -1,11 +1,11 @@
 ---
-title: Mi cuarto post
+title: Mi cuarta entrada en el blog
 author: Diego Sánchez
-description: "¡Este post aparece solito!"
+description: "Esta entrada aparecerá sola!"
 image:
-    url: "/images/default-og-image.png"
-    alt: "La palabra astro sobre una ilustración de planetas y estrellas."
-pubDate: 2026-10-23
-tags: ["astro", "successes"]
+  url: "/images/default-og-image.png"
+  alt: "La palabra 'astro' contra una ilustración de planetas y estrellas."
+pubDate: 2022-08-08
+tags: ["astro", "éxitos"]
 ---
-Este post debería aparecer junto con mis otros posts, porque `import.meta.glob()` regresa la lista de todos mis posts para armar la lista del blog.
+Esta entrada debería aparecer con las demás entradas de mi blog, porque `import.meta.glob()` está devolviendo una lista de todas mis entradas para crear mi lista.

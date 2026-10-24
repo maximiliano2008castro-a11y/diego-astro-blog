@@ -5,7 +5,7 @@ export async function GET(context) {
   const posts = await getCollection("blog");
   return rss({
     title: 'Diego Sánchez | Blog',
-    description: 'Mi camino aprendiendo Astro',
+    description: 'Mi viaje de aprendizaje de Astro',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

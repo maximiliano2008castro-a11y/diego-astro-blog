@@ -1,45 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle = "Sobre mí";
 
 const identity = {
-  firstName: "Diego",
-  country: "México",
-  occupation: "estudiante de Desarrollo de Software en el CETI Colomos",
-  hobbies: ["el café de especialidad", "la música", "programar proyectos propios"],
+  firstName: "Diego Sánchez",
+  country: "Guadalajara, Jalisco",
+  occupation: "estudiante, comerciante, barista y de marketing",
+  hobbies: ["escuchar y tocar música", "ir al gym"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "Python", "Kotlin", "React", "Astro"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de documentos"];
 
 const happy = true;
 const finished = true;
-const goal = 3;
+const goal = "poner mi propia cafetería";
 
-const skillColor = "crimson";
+const skillColor = "#E8752B";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <style define:vars={{skillColor, fontWeight, textCase}}>
-    .skill {
-      color: var(--skillColor);
-      font-weight: var(--fontWeight);
-      text-transform: var(--textCase);
-    }
-  </style>
+  <h2>... ¡y mi nuevo sitio Astro!</h2>
+  <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
+  <p>Este sitio se irá actualizando a medida que vaya completando más partes del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!</p>
 
-  <h2>... y mi nuevo sitio de Astro</h2>
-
-  <p>Estoy siguiendo el tutorial introductorio de Astro. Esta es la segunda página de mi sitio, ¡y es la primera que construí yo mismo!</p>
-
-  <p>Este sitio se irá actualizando conforme avance en el tutorial, así que vuelve seguido para ver cómo va mi recorrido.</p>
-
-  <p>Algunos datos sobre mí:</p>
+  <p>He aquí algunos datos sobre mí:</p>
   <ul>
     <li>Me llamo {identity.firstName}.</li>
-    <li>Vivo en {identity.country} y soy {identity.occupation}.</li>
+    <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
     {identity.hobbies.length >= 2 &&
-      <li>Dos de mis pasatiempos son: {identity.hobbies[0]} y {identity.hobbies[1]}</li>
+      <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[1]}</li>
     }
   </ul>
 
@@ -48,9 +39,15 @@ const textCase = "uppercase";
     {skills.map((skill) => <li class="skill">{skill}</li>)}
   </ul>
 
-  {happy && <p>¡Estoy feliz de estar aprendiendo Astro!</p>}
-
-  {finished && <p>¡Terminé este tutorial!</p>}
-
-  {goal === 3 ? <p>Mi meta es terminarlo en 3 días.</p> : <p>Mi meta no son 3 días.</p>}
+  {happy && <p>¡Estoy feliz de aprender Astro!</p>}
+  {finished && <p>¡He terminado este tutorial!</p>}
+  {goal ? <p>Mi meta es {goal}.</p> : <p>Sigo pensando en mi próxima meta.</p>}
 </BaseLayout>
+
+<style define:vars={{skillColor, fontWeight, textCase}}>
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>

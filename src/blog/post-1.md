@@ -1,23 +1,22 @@
 ---
-title: 'Mi primer post'
-pubDate: 2026-10-20
-description: 'Este es el primer post de mi nuevo blog hecho con Astro.'
+title: 'Mi primera publicación en el blog'
+pubDate: 2022-07-01
+description: 'Este es la primera publicación de mi nuevo blog de Astro.'
 author: 'Diego Sánchez'
 image:
     url: '/images/rose.webp'
-    alt: 'El logo de Astro sobre un fondo oscuro con un brillo rosa.'
-tags: ["astro", "blogging", "learning in public"]
+    alt: 'El logotipo de Astro sobre un fondo oscuro con un brillo rosado.'
+tags: ["astro", "bloguear", "aprender en público"]
 ---
-¡Bienvenido a mi _nuevo blog_ sobre aprender Astro! Aquí voy a compartir mi recorrido mientras construyo un sitio web nuevo.
 
-## Lo que he logrado
+¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de Astro! Aquí, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web.
 
-1. **Instalar Astro**: primero creé un proyecto nuevo de Astro y configuré mis cuentas en línea.
+## Lo que he conseguido
 
-2. **Crear páginas**: después aprendí a crear páginas con archivos `.astro` dentro de la carpeta `src/pages/`.
+1. **Instalación de Astro**: En primer lugar, he creado un nuevo proyecto Astro y configurar mis cuentas en línea.
+2. **Creación de páginas**: Luego aprendí cómo hacer páginas creando nuevos archivos `.astro` y colocándolos en la carpeta `src/pages/`.
+3. **Creación de publicaciones**: ¡Esta es mi primera publicación! ¡Ahora tengo páginas de Astro y publicaciónes en Markdown!
 
-3. **Escribir posts**: ¡este es mi primer post! Ya tengo páginas de Astro y posts en Markdown.
+## Próximos pasos
 
-## Lo que sigue
-
-Voy a terminar el tutorial de Astro y después seguiré agregando posts. Pendientes de lo que viene.
+Terminaré el tutorial de Astro, y luego seguiré añadiendo más publicaciones. Mira este espacio para más por venir.
