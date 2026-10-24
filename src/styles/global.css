@@ -97,3 +97,29 @@ html.dark {
 .dark a {
   color: #ff9776;
 }
+
+/* imagenes, tablas y codigo dentro de los posts largos */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 8px;
+}
