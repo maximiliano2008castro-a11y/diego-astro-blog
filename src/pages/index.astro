@@ -5,6 +5,5 @@ const pageTitle = "Página de inicio";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>El blog donde aprendo Astro en público</h2>
-  <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} />
   <Greeting client:load messages={["Hola", "Qué onda", "Buenas", "Bienvenido"]} />
 </BaseLayout>
