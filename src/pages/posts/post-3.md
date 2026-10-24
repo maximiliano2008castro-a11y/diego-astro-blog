@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Mi tercer post
 author: Diego Sánchez
 description: "Tuve algunos retos, ¡pero preguntar en la comunidad me ayudó mucho!"
